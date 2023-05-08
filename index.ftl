@@ -10,25 +10,25 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="${theme_base!}/img/favicon.ico" rel="icon">
-  <link href="${theme_base!}/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="${theme_base!}/assets/img/favicon.ico" rel="icon">
+  <link href="${theme_base!}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="${theme_base!}/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/aos/aos.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="${theme_base!}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
 
   <!-- Template Main CSS File -->
-  <link href="${theme_base!}/css/style.css" rel="stylesheet">
+  <link href="${theme_base!}/assets/css/style.css" rel="stylesheet">
 </head>
 
 <#include "header.ftl">
@@ -157,7 +157,7 @@
             </div>
             <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
               <div class="icon-box">
-                <i class="bi"><img src="${theme_base!}/img/database.png"></i>
+                <i class="bi"><img src="${theme_base!}/assets/img/database.png"></i>
                 <h4>{dreamer-cms:variable name='epoch_advance_title6'/}</a></h4>
                 <p>{dreamer-cms:variable name='epoch_advance_content6'/}</p>
               </div>
@@ -259,15 +259,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="${theme_base!}/vendor/aos/aos.js"></script>
-  <script src="${theme_base!}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="${theme_base!}/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="${theme_base!}/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="${theme_base!}/vendor/php-email-form/validate.js"></script>
-  <script src="${theme_base!}/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="${theme_base!}/assets/vendor/aos/aos.js"></script>
+  <script src="${theme_base!}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="${theme_base!}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="${theme_base!}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="${theme_base!}/assets/vendor/php-email-form/validate.js"></script>
+  <script src="${theme_base!}/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="${theme_base!}/js/main.js"></script>
+  <script src="${theme_base!}/assets/js/main.js"></script>
 
 </body>
 

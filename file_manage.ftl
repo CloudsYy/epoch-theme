@@ -10,9 +10,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{dreamer-cms:category field="typenamecn" /} - {dreamer-cms:global name="title"/}</title>
 </head>
-<link rel="stylesheet" type="text/css" href="${theme_base!}/css/default.css"/>
-<link rel="stylesheet" type="text/css" href="${theme_base!}/css/scrollbar.css">
-<script type="text/javascript" src="${theme_base!}/js/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/default.css"/>
+<link rel="stylesheet" type="text/css" href="${theme_base!}/assets/css/scrollbar.css">
+<script type="text/javascript" src="${theme_base!}/assets/js/jquery.min.js"></script>
 
 <style type="text/css">
 	html,body{
@@ -145,7 +145,7 @@
 		height: 20px;
 		content:'';
 		background-repeat:no-repeat;
-		background-image: url(${theme_base!}/img/point_right.png);
+		background-image: url(${theme_base!}/assets/img/point_right.png);
 		background-size: 20px;
 		background-position: center 2px;
 
@@ -154,7 +154,7 @@
 		border-radius: 8px;
 		background-color: #203E60;
 		background-repeat:no-repeat;
-		background-image: url(${theme_base!}/img/back.png);
+		background-image: url(${theme_base!}/assets/img/back.png);
 		background-size: 30px;
 		background-position:center 8px;
 	}
@@ -162,7 +162,7 @@
 		border-radius: 8px;
 		background-color: #203E60;
 		background-repeat:no-repeat;
-		background-image: url(${theme_base!}/img/front.png);
+		background-image: url(${theme_base!}/assets/img/front.png);
 		background-size: 30px;
 		background-position:center 8px;
 	}
@@ -170,7 +170,7 @@
 		border-radius: 8px;
 		background-color: #203E60;
 		background-repeat:no-repeat;
-		background-image: url(${theme_base!}/img/home.png);
+		background-image: url(${theme_base!}/assets/img/home.png);
 		background-size: 25px;
 		background-position:center;
 	}
@@ -192,7 +192,7 @@
 		height: 30px;
 		border-radius: 8px;
 		background-repeat:no-repeat;
-		background-image: url(${theme_base!}/img/navigate.png);
+		background-image: url(${theme_base!}/assets/img/navigate.png);
 		background-size: 20px;
 		background-position: center 10px;
 		margin:0;
@@ -272,7 +272,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/dir.png) ;
+		background-image:url(${theme_base!}/assets/img/dir.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -282,7 +282,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/file.png) ;
+		background-image:url(${theme_base!}/assets/img/file.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -292,7 +292,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/xls.png) ;
+		background-image:url(${theme_base!}/assets/img/xls.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -302,7 +302,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/png.png) ;
+		background-image:url(${theme_base!}/assets/img/png.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -312,7 +312,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/pdf.png) ;
+		background-image:url(${theme_base!}/assets/img/pdf.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -322,7 +322,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/apk.png) ;
+		background-image:url(${theme_base!}/assets/img/apk.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -332,7 +332,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/doc.png) ;
+		background-image:url(${theme_base!}/assets/img/doc.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -342,7 +342,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/zip.png) ;
+		background-image:url(${theme_base!}/assets/img/zip.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -352,7 +352,7 @@
 		margin-top: 5px;
 		height: 90px;
 		width: 100%;
-		background-image:url(${theme_base!}/img/mp4.png) ;
+		background-image:url(${theme_base!}/assets/img/mp4.png) ;
 		border-radius: 8px;
 		background-repeat:no-repeat;
 		background-size: 90px;
@@ -442,7 +442,7 @@
 		width: 100px;
 		height: 100px;
 		border:1px dashed #4F6072;
-		background-image: url(${theme_base!}/img/加号.png);
+		background-image: url(${theme_base!}/assets/img/加号.png);
 		background-repeat: no-repeat;
 		background-size: 20px ;
 		background-position: center;
@@ -451,7 +451,7 @@
 	.addFile:hover{
 		cursor: pointer;
 		border:1px dashed #1296DB;
-		background-image: url(${theme_base!}/img/加号2.png);
+		background-image: url(${theme_base!}/assets/img/加号2.png);
 	}
 	.removeBackImg{
 		background-image: none!important;;
@@ -470,13 +470,13 @@
 		border-radius: 10px;
 		right: -10px;
 		top:-10px;
-		background-image: url(${theme_base!}/img/close.png);
+		background-image: url(${theme_base!}/assets/img/close.png);
 		background-size: 20px;
 		z-index: 99999999;
 		background-repeat: no-repeat;
 	}
 	.close_icon:hover{
-		background-image: url(${theme_base!}/img/close2.png);
+		background-image: url(${theme_base!}/assets/img/close2.png);
 	}
 	.dialog_head{
 		width: 100%;

@@ -36,7 +36,7 @@
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <h3>关注我们</h3>
-                    <i><img style="width: 100px;height: 100px" src="${theme_base!}/img/official_accounts.jpg"/></i>
+                    <i><img style="width: 100px;height: 100px" src="${theme_base!}/assets/img/official_accounts.jpg"/></i>
                 </div>
 
             </div>

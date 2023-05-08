@@ -9,24 +9,24 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="${theme_base!}/img/favicon.ico" rel="icon">
-    <link href="${theme_base!}/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="${theme_base!}/assets/img/favicon.ico" rel="icon">
+    <link href="${theme_base!}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="${theme_base!}/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/aos/aos.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="${theme_base!}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="${theme_base!}/css/style.css" rel="stylesheet">
+    <link href="${theme_base!}/assets/css/style.css" rel="stylesheet">
 </head>
 {dreamer-cms:include file='header.html'/}
 <body>
@@ -62,13 +62,13 @@
 {dreamer-cms:include file='footer.html'/}
 
 <!--============ JavaScript ===========-->
-<script src="${theme_base!}/js/jquery-3.2.1.slim.min.js"></script>
-<script src="${theme_base!}/bootstrap/js/bootstrap.min.js"></script>
-<script src="${theme_base!}/js/popper.min.js"></script>
-<script src="${theme_base!}/plugins/slick/slick.min.js"></script>
-<script src="${theme_base!}/js/app.js"></script>
+<script src="${theme_base!}/assets/js/jquery-3.2.1.slim.min.js"></script>
+<script src="${theme_base!}/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="${theme_base!}/assets/js/popper.min.js"></script>
+<script src="${theme_base!}/assets/plugins/slick/slick.min.js"></script>
+<script src="${theme_base!}/assets/js/app.js"></script>
 
-<script src="${theme_base!}/js/main.js"></script>
+<script src="${theme_base!}/assets/js/main.js"></script>
 </body>
 </html>
 

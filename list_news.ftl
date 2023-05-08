@@ -8,12 +8,12 @@
     <meta name="Keywords" content="{dreamer-cms:global name="keywords"/}" />
 	<meta name="Description" content="{dreamer-cms:global name="describe"/}" />
     <!--============ All CSS Links ===========-->
-    <link rel="stylesheet" href="${theme_base!}/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="${theme_base!}/css/font-awesome.min.css">
-    <link rel="stylesheet" href="${theme_base!}/plugins/slick/slick.css">
-    <link rel="stylesheet" href="${theme_base!}/plugins/slick/slick-theme.css">
-    <link rel="stylesheet" href="${theme_base!}/css/app.css">
-    <link rel="stylesheet" href="${theme_base!}/css/responsive.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/css/app.css">
+    <link rel="stylesheet" href="${theme_base!}/assets/css/responsive.css">
 </head>
 <body>
 
@@ -74,11 +74,11 @@
     {dreamer-cms:include file='footer.html'/}
 
     <!--============ JavaScript ===========-->
-    <script src="${theme_base!}/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="${theme_base!}/bootstrap/js/bootstrap.min.js"></script>
-    <script src="${theme_base!}/js/popper.min.js"></script>
-    <script src="${theme_base!}/plugins/slick/slick.min.js"></script>
-    <script src="${theme_base!}/js/app.js"></script>
+    <script src="${theme_base!}/assets/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="${theme_base!}/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="${theme_base!}/assets/js/popper.min.js"></script>
+    <script src="${theme_base!}/assets/plugins/slick/slick.min.js"></script>
+    <script src="${theme_base!}/assets/js/app.js"></script>
 
 </body>
 </html>
