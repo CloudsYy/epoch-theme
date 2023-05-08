@@ -1,7 +1,7 @@
 apiVersion: epoch-v1
 kind: Setting
 metadata:
-  name: epoch-theme
+  label: epoch-theme
 spec:
   forms:
     - group: style
