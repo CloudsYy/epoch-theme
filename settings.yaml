@@ -1,4 +1,4 @@
-apiVersion: v1alpha1
+apiVersion: epoch-v1
 kind: Setting
 metadata:
   name: theme-starter-setting
