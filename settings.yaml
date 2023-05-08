@@ -3,6 +3,7 @@ kind: Setting
 metadata:
   label: epoch-theme
 spec:
+  label: 样式
   forms:
     - group: style
       label: 样式
