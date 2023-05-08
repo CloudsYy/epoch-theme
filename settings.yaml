@@ -3,7 +3,7 @@ general:
   items:
     home_title:
       name: home_title
-      label: 首页展示博客名
+      label: '易元 - 专注智能制造整体解决方案'
       type: text
       placeholder: '用于首页展示名字'
       description: '注意：如填写，会覆盖原有博客名'
