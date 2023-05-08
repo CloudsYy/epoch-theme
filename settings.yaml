@@ -6,7 +6,8 @@ spec:
     - group: style
       label: 样式
       formSchema:
-        - $formkit: color
           name: background_color
+          type: color
           label: 背景颜色
-          value: "#f2f2f2"
+          default: '#2474b5'
+          placeholder: '网站主题色'
