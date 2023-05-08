@@ -1,7 +1,5 @@
 apiVersion: epoch-v1
 kind: Setting
-metadata:
-  label: epoch-theme
 spec:
   label: 样式
   forms:
