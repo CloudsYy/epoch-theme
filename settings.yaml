@@ -1,13 +1,20 @@
-apiVersion: epoch-v1
-kind: Setting
-spec:
-  label: 样式
-  forms:
-    - group: style
-      label: 样式
-      formSchema:
-          name: background_color
-          type: color
-          label: 背景颜色
-          default: '#2474b5'
-          placeholder: '网站主题色'
+general:
+  label: 基本设置
+  items:
+    home_title:
+      name: home_title
+      label: 首页展示博客名
+      type: text
+      placeholder: '用于首页展示名字'
+      description: '注意：如填写，会覆盖原有博客名'
+    home_description:
+      name: home_description
+      label: 首页描述
+      type: text
+      placeholder: '用于首页描述'
+    base_color:
+      name: base_color
+      label: 网站主题色
+      type: color
+      default: '#2474b5'
+      placeholder: '网站主题色'
