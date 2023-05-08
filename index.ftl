@@ -1,4 +1,4 @@
-<@layout.extends name="module/macro.ftl">
+<@layout.extends name="/macro.ftl">
   <@layout.put block="title">45623</@layout.put>
   <@layout.put block="content">
     <div id="page" class="site">
