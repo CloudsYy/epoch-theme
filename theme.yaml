@@ -1,11 +1,11 @@
 apiVersion: theme.halo.run/v1alpha1
 kind: Theme
 metadata:
-  name: theme-starter
+  name: epoch-theme
 spec:
-  displayName: Theme Starter
+  displayName: epoch-theme
   author:
-    name: halo-dev
+    name: epoch-theme
     website: "https://halo.run"
   description: Halo 2.0 Theme base on Thymeleaf
   logo: "https://halo.run/logo"
