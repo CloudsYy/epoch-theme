@@ -1,4 +1,4 @@
-apiVersion: theme.halo.run/v1alpha1
+apiVersion: epoch-v1
 kind: Theme
 metadata:
   name: epoch-theme
