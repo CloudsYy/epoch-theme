@@ -5,7 +5,7 @@ metadata:
 spec:
   displayName: epoch-theme
   author:
-    name: epoch-theme
+    name: cloud
     website: "https://halo.run"
   description: Halo 2.0 Theme base on Thymeleaf
   logo: "https://halo.run/logo"
