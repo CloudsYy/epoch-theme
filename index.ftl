@@ -30,7 +30,7 @@
   <link href="${theme_base!}/css/style.css" rel="stylesheet">
 </head>
 
-{dreamer-cms:include file='header.html'/}
+<#include "header.ftl">
 <body>
   <!-- ======= Hero Section ======= -->
   <div>
@@ -252,7 +252,7 @@
     </main><!-- End #main -->
   </div>
 
-  {dreamer-cms:include file='footer.html'/}
+  <#include "footer.ftl">
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
