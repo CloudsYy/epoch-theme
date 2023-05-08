@@ -26,6 +26,7 @@
   <link href="${theme_base!}/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="${theme_base!}/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
   <!-- Template Main CSS File -->
   <link href="${theme_base!}/css/style.css" rel="stylesheet">
 </head>
