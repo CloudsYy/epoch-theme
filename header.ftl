@@ -51,31 +51,31 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
-                {dreamer-cms:categoryartlist typeid="178M764H" length="8"}
-                {dreamer-cms:if test="('true' eq [field:haschildren/])"}
+                <#list home_header as item>
                 <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>
                     <ul class="dropdown-menu">
-                        {dreamer-cms:channel}
-                         <div class="dropdown-menu-item">
-                             <div class="dropdown-menu-item-title">[field:typenamecn /]</div>
-                             <div class="dropdown-menu-item-flex">
-                                 {dreamer-cms:childchannel}
-                                 <div class="dropdown-menu-item-title flex-item">
-                                     <a href="[field:typeurl/]">[field:typenamecn /]</a>
-                                 </div>
-                                 {/dreamer-cms:childchannel}
-                             </div>
-                         </div>
-                        {/dreamer-cms:channel}
+                        ${item.label}
+<#--                         <div class="dropdown-menu-item">-->
+<#--                             <div class="dropdown-menu-item-title">[field:typenamecn /]</div>-->
+<#--                             <div class="dropdown-menu-item-flex">-->
+<#--                                 {dreamer-cms:childchannel}-->
+<#--                                 <div class="dropdown-menu-item-title flex-item">-->
+<#--                                     <a href="[field:typeurl/]">[field:typenamecn /]</a>-->
+<#--                                 </div>-->
+<#--                                 {/dreamer-cms:childchannel}-->
+<#--                             </div>-->
+<#--                         </div>-->
+
                     </ul>
                 </li>
+                </#list>
                 {/dreamer-cms:if}
                 {dreamer-cms:if test="('false' eq [field:haschildren/])"}
                 <li class="nav-item"><a class="nav-link scroll" href="[field:typeurl /]" title="[field:typenamecn /]">[field:typenamecn /]</a></li>
                 {/dreamer-cms:if}
                 {/dreamer-cms:categoryartlist}
             </ul>
-            <i class="bi bi-telephone mobile-nav-toggle1">{dreamer-cms:variable name='epoch_phone'/}</i>
+            <i class="bi bi-telephone mobile-nav-toggle1">${settings.phone!}</i>
             <i class="bi bi-list mobile-nav-toggle"></i>
 
         </nav>

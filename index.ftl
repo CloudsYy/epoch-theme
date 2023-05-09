@@ -99,8 +99,8 @@
       <section id="about" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>{dreamer-cms:variable name='epoch_introduction'/}</h2>
-            <p>{dreamer-cms:variable name='epoch_introduction_content'/}</p>
+            <h2>公司简介</h2>
+            <p>${settings.company_profile!}</p>
           </div>
 
           <div class="row content" style="justify-content: center">
