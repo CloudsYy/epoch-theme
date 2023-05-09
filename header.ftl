@@ -51,7 +51,8 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
-<#--                <#list home_header as item>-->
+                <#list settings.home_header.items as item>
+                ${item.label}
                 <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>
                     <ul class="dropdown-menu">
 <#--                        ${item.label}-->
@@ -65,10 +66,9 @@
 <#--                                 {/dreamer-cms:childchannel}-->
 <#--                             </div>-->
 <#--                         </div>-->
-
                     </ul>
                 </li>
-<#--                </#list>-->
+                </#list>
                 {/dreamer-cms:if}
                 {dreamer-cms:if test="('false' eq [field:haschildren/])"}
                 <li class="nav-item"><a class="nav-link scroll" href="[field:typeurl /]" title="[field:typenamecn /]">[field:typenamecn /]</a></li>
