@@ -51,7 +51,6 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
-
 <#--                <#list settings.home_header.items as item>-->
 <#--                ${item.label}-->
 <#--                <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>-->
@@ -70,14 +69,26 @@
 <#--                    </ul>-->
 <#--                </li>-->
 <#--                </#list>-->
-                <@menuTag method="listByTeam" team="main">
-                    <ul>
-                        <#list menus as menu>
-                            <li>
-                                <a href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
-                            </li>
-                        </#list>
-                    </ul>
+                <@menuTag method="tree">
+                    <#list menus?sort_by('priority') as menu>
+                        <li class="menu-item nav-menu-item ">
+                            <#if menu.children?? && menu.children?size gt 0>
+                                <a href="javascript:void(0)" data-ajax target="${menu.target!}" class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
+                            <#else>
+                                <a href="${menu.url!}" data-ajax target="${menu.target!}">${menu.name}</a>
+                            </#if>
+                            <#if menu.children?? && menu.children?size gt 0>
+                                <ul class="nav-sub-menu" style="display: none;">
+                                    <#list menu.children?sort_by('priority') as child>
+                                        <li>
+                                            <a href="${child.url!}" data-ajax target="${child.target!}"
+                                               onfocus="this.blur();">${child.name}</a>
+                                        </li>
+                                    </#list>
+                                </ul>
+                            </#if>
+                        </li>
+                    </#list>
                 </@menuTag>
                 {/dreamer-cms:if}
                 {dreamer-cms:if test="('false' eq [field:haschildren/])"}
