@@ -73,7 +73,7 @@
                                                 <#list child.children as child1>
                                                     <div class="dropdown-menu-item-flex">
                                                         <div class="dropdown-menu-item-title flex-item">
-                                                            <a href="${menu.url!}">${child1.name!}</a>
+                                                            <a href="${child1.url!}">${child1.name!}</a>
                                                         </div>
                                                     </div>
                                                 </#list>
