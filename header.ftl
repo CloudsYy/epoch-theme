@@ -50,7 +50,7 @@
         <h1 class="logo"><a href="/"><img src="${theme_base!}/assets/img/logo.png"></a></h1>
         <nav id="navbar" class="navbar">
             <ul>
-                <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
+<#--                <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>-->
 <#--                <#list settings.home_header.items as item>-->
 <#--                ${item.label}-->
 <#--                <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>-->
@@ -71,9 +71,10 @@
 <#--                </#list>-->
                 <@menuTag method="tree">
                     <#list menus?sort_by('priority') as menu>
-                        <li class="menu-item nav-menu-item ">
+                        <li class="dropdown nav-item">
                             <#if menu.children?? && menu.children?size gt 0>
-                                <a href="javascript:void(0)" data-ajax target="${menu.target!}" class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
+                                <a href="javascript:void(0)" data-toggle="dropdown" data-ajax target="${menu.target!}"
+                                   class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
                             <#else>
                                 <a href="${menu.url!}" data-ajax target="${menu.target!}">${menu.name}</a>
                             </#if>
