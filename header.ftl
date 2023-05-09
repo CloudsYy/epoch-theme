@@ -58,9 +58,9 @@
         <h1 class="logo"><a href="/"><img src="${theme_base!}/assets/img/logo.png"></a></h1>
         <nav id="navbar" class="navbar">
             <ul>
-                <#--                <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>-->
-                <#--                {dreamer-cms:categoryartlist typeid="178M764H" length="8"}-->
-                <#--                {dreamer-cms:if test="('true' eq [field:haschildren/])"}-->
+                <#--<li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>-->
+                <#--{dreamer-cms:categoryartlist typeid="178M764H" length="8"}-->
+                <#--{dreamer-cms:if test="('true' eq [field:haschildren/])"}-->
                 <@menuTag method="tree">
                     <#list menus as menu>
                         <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">${menu.name!}</a>
@@ -69,13 +69,13 @@
                                     <div class="dropdown-menu-item">
                                         <#list menu.children as child>
                                             <div class="dropdown-menu-item-title">${child.name!}</div>
-                                        <#--<div class="dropdown-menu-item-flex">-->
-                                        <#--    {dreamer-cms:childchannel}-->
-                                        <#--    <div class="dropdown-menu-item-title flex-item">-->
-                                        <#--        <a href="[field:typeurl/]">[field:typenamecn /]</a>-->
-                                        <#--    </div>-->
-                                        <#--    {/dreamer-cms:childchannel}-->
-                                        <#--</div>-->
+                                            <div class="dropdown-menu-item-flex">
+                                                <#list menu.children as child>
+                                                    <div class="dropdown-menu-item-title flex-item">
+                                                        <a href="[field:typeurl/]">${child.name!}</a>
+                                                    </div>
+                                                </#list>
+                                            </div>
                                         </#list>
                                     </div>
                                 </if>
@@ -90,7 +90,7 @@
                 {/dreamer-cms:if}
                 {/dreamer-cms:categoryartlist}
             </ul>
-            <i class="bi bi-telephone mobile-nav-toggle1">${settings.phone!}</i>
+            <i class="bi bi-telephone mobile-nav-toggle1">${settings.company_phone!}</i>
             <i class="bi bi-list mobile-nav-toggle"></i>
 
         </nav>
