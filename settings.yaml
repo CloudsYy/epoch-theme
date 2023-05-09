@@ -14,7 +14,7 @@ general:
       default: '#2474b5'
       placeholder: '网站主题色'
 company_info:
-  label: 公司基本信息
+  label: 公司信息
   items:
     company_name:
       name: company_name
