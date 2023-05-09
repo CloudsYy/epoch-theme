@@ -69,13 +69,13 @@
                                     <div class="dropdown-menu-item">
                                         <#list menu.children as child>
                                             <div class="dropdown-menu-item-title">${child.name!}</div>
-                                            <div class="dropdown-menu-item-flex">
-                                                <#list menu.children.children as child>
-                                                    <div class="dropdown-menu-item-title flex-item">
-                                                        <a href="[field:typeurl/]">${child.name!}</a>
-                                                    </div>
-                                                </#list>
-                                            </div>
+<#--                                            <div class="dropdown-menu-item-flex">-->
+<#--                                                <#list menu.children.children as child>-->
+<#--                                                    <div class="dropdown-menu-item-title flex-item">-->
+<#--                                                        <a href="[field:typeurl/]">${child.name!}</a>-->
+<#--                                                    </div>-->
+<#--                                                </#list>-->
+<#--                                            </div>-->
                                         </#list>
                                     </div>
                                 </ul>
