@@ -51,46 +51,28 @@
         <nav id="navbar" class="navbar">
             <ul>
 <#--                <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>-->
-<#--                <#list settings.home_header.items as item>-->
-<#--                ${item.label}-->
-<#--                <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>-->
-<#--                    <ul class="dropdown-menu">-->
-<#--                        ${item.label}-->
-<#--                         <div class="dropdown-menu-item">-->
-<#--                             <div class="dropdown-menu-item-title">[field:typenamecn /]</div>-->
-<#--                             <div class="dropdown-menu-item-flex">-->
-<#--                                 {dreamer-cms:childchannel}-->
-<#--                                 <div class="dropdown-menu-item-title flex-item">-->
-<#--                                     <a href="[field:typeurl/]">[field:typenamecn /]</a>-->
-<#--                                 </div>-->
-<#--                                 {/dreamer-cms:childchannel}-->
-<#--                             </div>-->
-<#--                         </div>-->
-<#--                    </ul>-->
-<#--                </li>-->
-<#--                </#list>-->
-                <@menuTag method="tree">
-                    <#list menus?sort_by('priority') as menu>
-                        <li class="dropdown nav-item">
-                            <#if menu.children?? && menu.children?size gt 0>
-                                <a href="javascript:void(0)" data-toggle="dropdown" data-ajax target="${menu.target!}"
-                                   class="nav-menu-link">${menu.name} <i class="fa fa-angle-down nav-menu-angle" aria-hidden="true"></i></a>
-                            <#else>
-                                <a href="${menu.url!}" data-ajax target="${menu.target!}">${menu.name}</a>
-                            </#if>
-                            <#if menu.children?? && menu.children?size gt 0>
-                                <ul class="nav-sub-menu" style="display: none;">
-                                    <#list menu.children?sort_by('priority') as child>
-                                        <li>
-                                            <a href="${child.url!}" data-ajax target="${child.target!}"
-                                               onfocus="this.blur();">${child.name}</a>
-                                        </li>
+<#--                {dreamer-cms:categoryartlist typeid="178M764H" length="8"}-->
+<#--                {dreamer-cms:if test="('true' eq [field:haschildren/])"}-->
+                <#list menus as menu>
+                    <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">${menu.name!}</a>
+                        <ul class="dropdown-menu">
+                            <if menu.children?? && menu.children?size gt 0>
+                                <div class="dropdown-menu-item">
+                                    <#list menu.children as child>
+                                        <div class="dropdown-menu-item-title">${child.name!}</div>
+<#--                                        <div class="dropdown-menu-item-flex">-->
+<#--                                            {dreamer-cms:childchannel}-->
+<#--                                            <div class="dropdown-menu-item-title flex-item">-->
+<#--                                                <a href="[field:typeurl/]">[field:typenamecn /]</a>-->
+<#--                                            </div>-->
+<#--                                            {/dreamer-cms:childchannel}-->
+<#--                                        </div>-->
                                     </#list>
-                                </ul>
-                            </#if>
-                        </li>
-                    </#list>
-                </@menuTag>
+                                </div>
+                            </if>
+                        </ul>
+                    </li>
+                </#list>
 
                 {/dreamer-cms:if}
                 {dreamer-cms:if test="('false' eq [field:haschildren/])"}
