@@ -51,6 +51,7 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
+
 <#--                <#list settings.home_header.items as item>-->
 <#--                ${item.label}-->
 <#--                <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">[field:typenamecn /]</a>-->
@@ -69,6 +70,15 @@
 <#--                    </ul>-->
 <#--                </li>-->
 <#--                </#list>-->
+                <@menuTag method="listByTeam" team="main">
+                    <ul>
+                        <#list menus as menu>
+                            <li>
+                                <a href="${menu.url!}" target="${menu.target!}">${menu.name!}</a>
+                            </li>
+                        </#list>
+                    </ul>
+                </@menuTag>
                 {/dreamer-cms:if}
                 {dreamer-cms:if test="('false' eq [field:haschildren/])"}
                 <li class="nav-item"><a class="nav-link scroll" href="[field:typeurl /]" title="[field:typenamecn /]">[field:typenamecn /]</a></li>
