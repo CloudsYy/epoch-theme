@@ -64,13 +64,13 @@
                 <@menuTag method="tree">
                     <#list menus as menu>
                         <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">${menu.name!}</a>
-                            <ul class="dropdown-menu">
-                                <if menu.children?? && menu.children?size gt 0>
+                            <if menu.children?? && menu.children?size gt 0>
+                                <ul class="dropdown-menu">
                                     <div class="dropdown-menu-item">
                                         <#list menu.children as child>
                                             <div class="dropdown-menu-item-title">${child.name!}</div>
                                             <div class="dropdown-menu-item-flex">
-                                                <#list menu.children as child>
+                                                <#list menu.children.children as child>
                                                     <div class="dropdown-menu-item-title flex-item">
                                                         <a href="[field:typeurl/]">${child.name!}</a>
                                                     </div>
@@ -78,8 +78,8 @@
                                             </div>
                                         </#list>
                                     </div>
-                                </if>
-                            </ul>
+                                </ul>
+                            </if>
                         </li>
                     </#list>
                 </@menuTag>
