@@ -8,7 +8,7 @@
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <h4>关于我们</h4>
-                    <p>{dreamer-cms:variable name='epoch-aboutus'/}</p>
+                    <p>${settings.company_introduction!}</p>
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-links">
@@ -36,7 +36,7 @@
 
                 <div class="col-lg-3 col-md-6 footer-info">
                     <h3>关注我们</h3>
-                    <i><img style="width: 100px;height: 100px" src="${theme_base!}/assets/img/official_accounts.jpg"/></i>
+                    <i><img style="width: 100px;height: 100px" src="${settings.QR_code_official_account!}"/></i>
                 </div>
 
             </div>

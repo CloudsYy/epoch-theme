@@ -18,27 +18,27 @@ company_info:
   items:
     company_name:
       name: company_name
-      label: 填写公司名称
+      label: 公司名称
       type: text
       placeholder: '填写公司名称'
     company_phone:
       name: company_phone
-      label: 填写公司电话
+      label: 公司电话
       type: text
       placeholder: '填写公司名称'
     company_address:
       name: company_address
-      label: 填写公司地址
+      label: 公司地址
       type: text
       placeholder: '填写公司地址'
     company_email:
       name: company_email
-      label: 填写公司邮箱
+      label: 公司邮箱
       type: text
       placeholder: '填写公司邮箱'
     company_introduction:
       name: company_introduction
-      label: 填写公司简介
+      label: 公司简介
       type: text
       placeholder: '填写公司简介'
     Icp:
