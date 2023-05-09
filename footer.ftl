@@ -27,9 +27,9 @@
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h4>联系我们</h4>
                     <p>
-                        <strong>地址：</strong> {dreamer-cms:variable name='epoch_address'/}<br><br>
-                        <strong>联系电话：</strong> {dreamer-cms:variable name='epoch_phone'/}<br>
-                        <strong>邮箱：</strong> {dreamer-cms:variable name='epoch_email'/}<br>
+                        <strong>地址：</strong> ${settings.company_address!}<br><br>
+                        <strong>联系电话：</strong>${settings.company_phone!}<br>
+                        <strong>邮箱：</strong> ${settings.company_email!}<br>
                     </p>
 
                 </div>
@@ -45,7 +45,8 @@
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>e-epoch</span></strong>. All Rights Reserved | 粤ICP备2022015685号
+<#--            &copy; Copyright <strong><span>e-epoch</span></strong>. All Rights Reserved | 粤ICP备2022015685号-->
+            <span>${settings.Icp!}</span>
         </div>
     </div>
 </footer>
