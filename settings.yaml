@@ -48,7 +48,7 @@ company_info:
       placeholder: '填入 ICP 备案号，没有则不填. '
     QR_code_official_account:
       name: QR_code_official_account
-      label: ''
+      label: '公众号二维码'
       type: attachment
       placeholder: '公众号二维码，不填不显示'
 home_header:
