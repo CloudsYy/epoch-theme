@@ -85,12 +85,6 @@
                         </li>
                     </#list>
                 </@menuTag>
-                {/dreamer-cms:if}
-                {dreamer-cms:if test="('false' eq [field:haschildren/])"}
-                <li class="nav-item"><a class="nav-link scroll" href="[field:typeurl /]" title="[field:typenamecn /]">[field:typenamecn
-                        /]</a></li>
-                {/dreamer-cms:if}
-                {/dreamer-cms:categoryartlist}
             </ul>
             <i class="bi bi-telephone mobile-nav-toggle1">${settings.company_phone!}</i>
             <i class="bi bi-list mobile-nav-toggle"></i>
