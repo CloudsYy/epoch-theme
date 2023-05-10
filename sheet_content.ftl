@@ -45,12 +45,18 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            <@postTag method="listByCategorySlug" categorySlug="/categories/news">
-                <span>分类 ${category.name!} 下的文章：</span>
-                <#list posts as post>
-                    <a href="${post.fullPath!}">${post.title!}</a>
+<#--            <@postTag method="listByCategorySlug" categorySlug="/categories/news">-->
+<#--                <span>分类 ${category.name!} 下的文章：</span>-->
+<#--                <#list posts as post>-->
+<#--                    <a href="${post.fullPath!}">${post.title!}</a>-->
+<#--                </#list>-->
+<#--            </@postTag>-->
+            <@categoryTag method="list">
+                <#list categories as category>
+                    <a href="${category.fullPath!}">${category.name!}（${category.postCount!}）</a>
                 </#list>
-            </@postTag>
+            </@categoryTag>
+
         </div>
     </section>
 </div>
