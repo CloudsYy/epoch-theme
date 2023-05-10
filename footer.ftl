@@ -16,7 +16,7 @@
                     <ul>
                         <#list menus.children as child>
 <#--                            <#if menu.children?? && menu.children?size gt 0>-->
-                                <li><i class="bx bx-chevron-right"></i><a href="${menu.url!}">${menu.name!}</a></li>
+                                <li><i class="bx bx-chevron-right"></i><a href="${child.url!}">${child.name!}</a></li>
 <#--                            </#if>-->
                         </#list>
                     </ul>
