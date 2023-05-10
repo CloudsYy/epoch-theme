@@ -45,32 +45,32 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            <ul class="pagination">
-                <@paginationTag method="categoryPosts" slug="${category.slug!}" page="${posts.number}" total="${posts.totalPages}" display="3">
-                    <#if pagination.hasPrev>
-                        <li>
-                            <a href="${pagination.prevPageFullPath!}">上一页</a>
-                        </li>
-                    </#if>
-                    <#list pagination.rainbowPages as number>
-                        <#if number.isCurrent>
-                            <li>
-                                <span class="current">${number.page!}</span>
-                            </li>
-                        <#else>
-                            <li>
-                                <a href="${number.fullPath!}">${number.page!}</a>
-                            </li>
-                        </#if>
-                    </#list>
-                    <#if pagination.hasNext>
-                        <li>
-                            <a href="${pagination.nextPageFullPath!}">下一页</a>
-                        </li>
-                    </#if>
-                </@paginationTag>
-            </ul>
-
+<#--            <ul class="pagination">-->
+<#--                <@paginationTag method="categoryPosts" slug="${category.slug!}" page="${posts.number}" total="${posts.totalPages}" display="3">-->
+<#--                    <#if pagination.hasPrev>-->
+<#--                        <li>-->
+<#--                            <a href="${pagination.prevPageFullPath!}">上一页</a>-->
+<#--                        </li>-->
+<#--                    </#if>-->
+<#--                    <#list pagination.rainbowPages as number>-->
+<#--                        <#if number.isCurrent>-->
+<#--                            <li>-->
+<#--                                <span class="current">${number.page!}</span>-->
+<#--                            </li>-->
+<#--                        <#else>-->
+<#--                            <li>-->
+<#--                                <a href="${number.fullPath!}">${number.page!}</a>-->
+<#--                            </li>-->
+<#--                        </#if>-->
+<#--                    </#list>-->
+<#--                    <#if pagination.hasNext>-->
+<#--                        <li>-->
+<#--                            <a href="${pagination.nextPageFullPath!}">下一页</a>-->
+<#--                        </li>-->
+<#--                    </#if>-->
+<#--                </@paginationTag>-->
+<#--            </ul>-->
+            123456
         </div>
     </section>
 </div>
