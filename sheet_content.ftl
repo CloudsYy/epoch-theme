@@ -45,13 +45,16 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            <@postTag method="listByCategorySlug" categorySlug="news">
-                <#list posts as post>
-                    <a href="${post.url!}">${post.summary!}</a>
-                    </br>
-                    </br>
-                </#list>
-            </@postTag>
+            <article>
+                ${post.formatContent!}
+                <@postTag method="listByCategorySlug" categorySlug="news">
+                    <#list posts as post>
+                        <a href="${post.url!}">${post.summary!}</a>
+                        </br>
+                        </br>
+                    </#list>
+                </@postTag>
+            </article>
         </div>
     </section>
 </div>
