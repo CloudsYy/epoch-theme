@@ -45,12 +45,13 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            <@layout.put block="content">
-                <article>
-                    <h1 th:text="${post.spec.title}"></h1>
-                    <div th:utext="${post.content.content}"> </div>
-                </article>
-            </@layout.put>
+            <@postTag method="listByCategorySlug" categorySlug="${category.slug!}">
+                <span>分类 ${category.name!} 下的文章：</span>
+                <#list posts as post>
+                    <a href="${post.fullPath!}">${post.title!}</a>
+                </#list>
+            </@postTag>
+
         </div>
     </section>
 </div>
