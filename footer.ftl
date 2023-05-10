@@ -19,7 +19,9 @@
                                 <#if menu.name == "解决方案" >
                                     <#list menu.children as child>
                                         <#if child.children?? && child.children?size gt 0>
-                                            <li><i class="bx bx-chevron-right"></i><a href="${child.url!}">${child.name!}</a></li>
+                                            <#list child.children as child1>
+                                                <li><i class="bx bx-chevron-right"></i><a href="${child1.url!}">${child1.name!}</a></li>
+                                            </#list>
                                         </#if>
                                     </#list>
                                 </#if>
