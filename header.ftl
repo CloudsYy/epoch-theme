@@ -66,8 +66,8 @@
                         <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">${menu.name!}</a>
                             <#if menu.children?? && menu.children?size gt 0>
                                 <ul class="dropdown-menu">
-                                    <div class="dropdown-menu-item">
-                                        <#list menu.children as child>
+                                    <#list menu.children as child>
+                                        <div class="dropdown-menu-item">
                                             <div class="dropdown-menu-item-title">${child.name!}</div>
                                             <#if child.children?? && child.children?size gt 0>
                                                 <#list child.children as child1>
@@ -78,8 +78,8 @@
                                                     </div>
                                                 </#list>
                                             </#if>
-                                        </#list>
-                                    </div>
+                                        </div>
+                                    </#list>
                                 </ul>
                             </#if>
                         </li>
@@ -88,7 +88,6 @@
             </ul>
             <i class="bi bi-telephone mobile-nav-toggle1">${settings.company_phone!}</i>
             <i class="bi bi-list mobile-nav-toggle"></i>
-
         </nav>
     </div>
 </header>
