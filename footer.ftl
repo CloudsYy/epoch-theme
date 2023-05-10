@@ -16,15 +16,13 @@
                     <ul>
                         <#list menus as menu>
                             <#if menu.children?? && menu.children?size gt 0>
-                                <#list menu.children as child>
-                                    <#if child.name == "解决方案" >
+                                <#if menu.name == "解决方案" >
+                                    <#list menu.children as child>
                                         <#if child.children?? && child.children?size gt 0>
-                                            <#list child.children as child1>
-                                                <li><i class="bx bx-chevron-right"></i><a href="${child1.url!}">${child1.name!}</a></li>
-                                            </#list>
+                                            <li><i class="bx bx-chevron-right"></i><a href="${child.url!}">${child.name!}</a></li>
                                         </#if>
-                                    </#if>
-                                </#list>
+                                    </#list>
+                                </#if>
                             </#if>
                         </#list>
                     </ul>
@@ -51,7 +49,7 @@
 
     <div class="container">
         <div class="copyright">
-<#--            &copy; Copyright <strong><span>e-epoch</span></strong>. All Rights Reserved | 粤ICP备2022015685号-->
+            <#--            &copy; Copyright <strong><span>e-epoch</span></strong>. All Rights Reserved | 粤ICP备2022015685号-->
             <span>${settings.Icp!}</span>
         </div>
     </div>
