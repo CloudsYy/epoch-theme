@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>{dreamer-cms:variable name='epoch_title'/}</title>
+    <title>${settings.home_title!}}</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -28,7 +28,8 @@
     <!-- Template Main CSS File -->
     <link href="${theme_base!}/assets/css/style.css" rel="stylesheet">
 </head>
-{dreamer-cms:include file='header.html'/}
+
+<#include "header.ftl">
 <body>
 <!--=== page header ===-->
 <div>
@@ -44,12 +45,38 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            {dreamer-cms:category field="htmlcontent" /}
+            <ul class="pagination">
+                <@paginationTag method="categoryPosts" slug="${category.slug!}" page="${posts.number}" total="${posts.totalPages}" display="3">
+                    <#if pagination.hasPrev>
+                        <li>
+                            <a href="${pagination.prevPageFullPath!}">上一页</a>
+                        </li>
+                    </#if>
+                    <#list pagination.rainbowPages as number>
+                        <#if number.isCurrent>
+                            <li>
+                                <span class="current">${number.page!}</span>
+                            </li>
+                        <#else>
+                            <li>
+                                <a href="${number.fullPath!}">${number.page!}</a>
+                            </li>
+                        </#if>
+                    </#list>
+                    <#if pagination.hasNext>
+                        <li>
+                            <a href="${pagination.nextPageFullPath!}">下一页</a>
+                        </li>
+                    </#if>
+                </@paginationTag>
+            </ul>
+
         </div>
     </section>
 </div>
 
-{dreamer-cms:include file='footer.html'/}
+
+<#include "footer.ftl">
 
 <!--============ JavaScript ===========-->
 <script src="${theme_base!}/assets/js/jquery-3.2.1.slim.min.js"></script>
