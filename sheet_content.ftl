@@ -45,10 +45,11 @@
     <!--=== single blog post ===-->
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
-            <@postTag method="listByCategorySlug" categorySlug="${category.slug!}">
-                <span>分类 ${category.name!} 下的文章：</span>
+            <@postTag method="listByCategorySlug" categorySlug="news">
                 <#list posts as post>
-                    <a href="${post.url!}">${post.title!}</a>
+                    <a href="${post.url!}">${post.summary!}</a>
+                    </br>
+                    </br>
                 </#list>
             </@postTag>
         </div>
