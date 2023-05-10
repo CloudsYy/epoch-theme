@@ -53,7 +53,7 @@
 <#--            </@postTag>-->
             <@categoryTag method="list">
                 <#list categories as category>
-                    <a href="${category.fullPath!}">${category.name!}（${category.postCount!}）</a>
+                    <a href="${category.fullPath!}">${category.slug!}</a>
                 </#list>
             </@categoryTag>
 
