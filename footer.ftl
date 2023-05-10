@@ -14,8 +14,10 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>我们的服务</h4>
                     <ul>
-                        <#list menus as menu>
-                            <li><i class="bx bx-chevron-right"></i><a href="${menu.url!}">${menu.name!}</a></li>
+                        <#list menus.children as child>
+<#--                            <#if menu.children?? && menu.children?size gt 0>-->
+                                <li><i class="bx bx-chevron-right"></i><a href="${menu.url!}">${menu.name!}</a></li>
+<#--                            </#if>-->
                         </#list>
                     </ul>
                 </div>
