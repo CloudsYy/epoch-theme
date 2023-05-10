@@ -14,10 +14,18 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>我们的服务</h4>
                     <ul>
-                        <#list menus.children as child>
-<#--                            <#if menu.children?? && menu.children?size gt 0>-->
-                                <li><i class="bx bx-chevron-right"></i><a href="${child.url!}">${child.name!}</a></li>
-<#--                            </#if>-->
+                        <#list menus as menu>
+                            <#if menu.children?? && menu.children?size gt 0>
+                                <#list menu.children as child>
+                                    <#if child.name == "解决方案" >
+                                        <#if child.children?? && child.children?size gt 0>
+                                            <#list child.children as child1>
+                                                <li><i class="bx bx-chevron-right"></i><a href="${child1.url!}">${child1.name!}</a></li>
+                                            </#list>
+                                        </#if>
+                                    </#if>
+                                </#list>
+                            </#if>
                         </#list>
                     </ul>
                 </div>
