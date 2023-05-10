@@ -13,15 +13,11 @@
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>我们的服务</h4>
-                    {dreamer-cms:categoryartlist typeid="9SL4CY29" length="5"}
-                    {dreamer-cms:if test="('true' eq [field:haschildren/])"}
                     <ul>
-                        {dreamer-cms:channel}
-                        <li><i class="bx bx-chevron-right"></i><a href="[field:typeurl/]">[field:typenamecn /]</a></li>
-                        {/dreamer-cms:channel}
+                        <#list menus as menu>
+                            <li><i class="bx bx-chevron-right"></i><a href="${menu.url!}">${menu.name!}</a></li>
+                        </#list>
                     </ul>
-                    {/dreamer-cms:if}
-                    {/dreamer-cms:categoryartlist}
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-contact">
