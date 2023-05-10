@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>${settings.home_title!}}</title>
+    <title>${settings.home_title!}</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -46,7 +46,10 @@
     <section>
         <div class="p1" id="main" style="padding: 0 17%;">
             <@layout.put block="content">
-                ${post.formatContent!}
+                <article>
+                    <h1 th:text="${post.spec.title}"></h1>
+                    <div th:utext="${post.content.content}"> </div>
+                </article>
             </@layout.put>
         </div>
     </section>
