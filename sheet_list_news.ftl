@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="${theme_base!}/assets/css/responsive.css">
 </head>
 <body>
-
-    {dreamer-cms:include file='header.html'/}
+    <#include "header.ftl">
 
     <!--=== page header ===-->
     <section class="page-header d-flex align-items-center">
@@ -78,8 +77,7 @@
         </div>
     </section>
 
-    {dreamer-cms:include file='footer.html'/}
-
+    <#include "footer.ftl">
     <!--============ JavaScript ===========-->
     <script src="${theme_base!}/assets/js/jquery-3.2.1.slim.min.js"></script>
     <script src="${theme_base!}/assets/bootstrap/js/bootstrap.min.js"></script>
