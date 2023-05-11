@@ -22,10 +22,17 @@
     <!--=== page header ===-->
     <section class="page-header d-flex align-items-center">
         <div class="container-fluid">
-            <div class="page-header-content text-center">
-                <div class="page-header-tag">{dreamer-cms:global name="title" /}</div>
-                <div class="page-header-title">{dreamer-cms:category field="typenamecn" /}</div>
-            </div>
+            <@postTag method="listByCategorySlug" categorySlug="news">
+                <#list posts as post>
+<#--                    <a href="${post.url!}">${post.summary!}</a>-->
+<#--                    </br>-->
+<#--                    </br>-->
+                    <div class="page-header-content text-center">
+                        <div class="page-header-tag">${post.titile!}</div>
+                        <div class="page-header-title">${post.summary!}</div>
+                    </div>
+                </#list>
+            </@postTag>
         </div>
     </section>
 
