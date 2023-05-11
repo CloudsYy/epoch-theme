@@ -86,23 +86,20 @@
 
     <main id="main">
 
-        <!-- ======= 公司简介 ======= -->
+        <!-- ======= 新闻管理 ======= -->
         <section id="icon-boxes" class="icon-boxes">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
-                        <@postTag method="listByCategorySlug" categorySlug="news">
-                            <#list posts as post>
+                    <@postTag method="listByCategorySlug" categorySlug="news">
+                        <#list posts as post>
+                            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
                                 <div class="icon-box">
-                                    <div class="page-header-content text-center">
-                                        <div class="feature-image"><img src="[field:litpic /]" class="ion ion-ios-cloud-outline"></i></div>
-                                        <h4 class="title"><a href="${post.url!}">${post.summary!}</a></h4>
-                                    </div>
+                                    <div class="feature-image"><img src="${post.thumbnail}" class="ion ion-ios-cloud-outline"></i></div>
+                                    <h4 class="title"><a href="${post.fullPath!}">${post.summary!}</a></h4>
                                 </div>
-                            </#list>
-                        </@postTag>
-                    </div>
-                    {/dreamer-cms:list}
+                            </div>
+                        </#list>
+                    </@postTag>
                 </div>
             </div>
         </section>
