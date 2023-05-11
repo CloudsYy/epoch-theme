@@ -1,12 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!--	-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>{dreamer-cms:category field="typenamecn" /} - {dreamer-cms:global name="title"/}</title>
-    <meta name="Keywords" content="{dreamer-cms:global name="keywords"/}" />
-	<meta name="Description" content="{dreamer-cms:global name="describe"/}" />
+    <title></title>
+<#--    <meta name="Keywords" content="{dreamer-cms:global name="keywords"/}" />-->
+<#--	<meta name="Description" content="{dreamer-cms:global name="describe" /}" />-->
     <!--============ All CSS Links ===========-->
     <link rel="stylesheet" href="${theme_base!}/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="${theme_base!}/assets/css/font-awesome.min.css">
@@ -15,9 +14,8 @@
     <link rel="stylesheet" href="${theme_base!}/assets/css/app.css">
     <link rel="stylesheet" href="${theme_base!}/assets/css/responsive.css">
 </head>
+<#include "header.ftl">
 <body>
-    <#include "header.ftl">
-
     <!--=== page header ===-->
     <section class="page-header d-flex align-items-center">
         <div class="container-fluid">
