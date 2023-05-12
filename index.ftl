@@ -40,38 +40,35 @@
         <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
             <!--第一条显示-->
             <!-- Slide 1 -->
-            {dreamer-cms:list typeid="250FP9J5" pagenum="1" pagesize="4" flag="p" formkey="SI555I4P" addfields="content"
-            }
+            <@postTag method="listByCategorySlug" categorySlug="annocement-first">
             <div class="carousel-item active">
                 <div class="carousel-container">
                     <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url('[field:litpic /]')"></div>
+                         style="background-image:url('${post.thumbnail!}')"></div>
                     <div class="carousel-item-info">
-                        <h2 class="animate__animated animate__fadeInDown">[field:title /]</h2>
-                        <div class="sub-title animate__animated animate__bounceInRight">[field:remark /]</div>
-                        <a href="[field:arcurl/]" class="btn-get-started  scrollto">查看详情</a>
+                        <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
+                        <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
+                        <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
                     </div>
                 </div>
             </div>
-            {/dreamer-cms:list}
+            </@postTag>
 
             <!--子循环项1-->
             <!-- Slide 2 -->
-            {dreamer-cms:list typeid="7RL6AA80" pagenum="1" pagesize="4" flag="p" formkey="SI555I4P"
-            addfields="content"}
+            <@postTag method="listByCategorySlug" categorySlug="annocement-other">
             <div class="carousel-item">
                 <div class="carousel-container">
                     <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url('[field:litpic /]"></div>
+                         style="background-image:url('${post.thumbnail!}"></div>
                     <div class="carousel-item-info">
-                        <h2 class="animate__animated animate__fadeInDown">[field:title function="substring(0,25,'...')"
-                            /]</h2>
-                        <div class="sub-title animate__animated animate__bounceInRight">[field:remark /]</div>
-                        <a href="[field:arcurl/]" class="btn-get-started  scrollto">查看详情</a>
+                        <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
+                        <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
+                        <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
                     </div>
                 </div>
             </div>
-            {/dreamer-cms:list}
+            </@postTag>
 
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>

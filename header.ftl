@@ -58,9 +58,7 @@
         <h1 class="logo"><a href="/"><img src="${theme_base!}/assets/img/logo.png"></a></h1>
         <nav id="navbar" class="navbar">
             <ul>
-                <#--<li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>-->
-                <#--{dreamer-cms:categoryartlist typeid="178M764H" length="8"}-->
-                <#--{dreamer-cms:if test="('true' eq [field:haschildren/])"}-->
+                <li class="dropdown nav-item"><a class="nav-link" href="/">首页</a></li>
                 <@menuTag method="tree">
                     <#list menus as menu>
                         <li class="dropdown nav-item"><a class="nav-link" data-toggle="dropdown">${menu.name!}</a>
