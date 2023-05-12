@@ -203,11 +203,6 @@
                     </div>
                 </div>
 
-                <div>
-                    <#list settings.product_introduction as product>
-                        ${product.name}
-                    </#list>
-                </div>
                 <div class="row portfolio-container">
                     <!--    新材料      -->
                     {dreamer-cms:list typeid="50Q0944J" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
