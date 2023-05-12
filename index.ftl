@@ -41,33 +41,37 @@
             <!--第一条显示-->
             <!-- Slide 1 -->
             <@postTag method="listByCategorySlug" categorySlug="annocement-first">
-            <div class="carousel-item active">
-                <div class="carousel-container">
-                    <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url(`${post.thumbnail!}`)"></div>
-                    <div class="carousel-item-info">
-                        <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
-                        <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
-                        <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
+                <#list posts as post>
+                    <div class="carousel-item active">
+                        <div class="carousel-container">
+                            <div class="carousel-container-bg animate__animated animate__pulse"
+                                 style="background-image:url('${post.thumbnail!}')"></div>
+                            <div class="carousel-item-info">
+                                <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
+                                <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
+                                <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </#list>
             </@postTag>
 
             <!--子循环项1-->
             <!-- Slide 2 -->
             <@postTag method="listByCategorySlug" categorySlug="annocement-other">
-            <div class="carousel-item">
-                <div class="carousel-container">
-                    <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url(`${post.thumbnail!}`)"></div>
-                    <div class="carousel-item-info">
-                        <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
-                        <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
-                        <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
+                <#list posts as post>
+                    <div class="carousel-item">
+                        <div class="carousel-container">
+                            <div class="carousel-container-bg animate__animated animate__pulse"
+                                 style="background-image:url('${post.thumbnail!}')"></div>
+                            <div class="carousel-item-info">
+                                <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
+                                <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
+                                <a href="${post.fullPath!}" class="btn-get-started  scrollto">查看详情</a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </#list>
             </@postTag>
 
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
@@ -91,7 +95,8 @@
                         <#list posts as post>
                             <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
                                 <div class="icon-box">
-                                    <div class="feature-image"><img src="${post.thumbnail}" class="ion ion-ios-cloud-outline"></i></div>
+                                    <div class="feature-image"><img src="${post.thumbnail}"
+                                                                    class="ion ion-ios-cloud-outline"></i></div>
                                     <h4 class="title"><a href="${post.fullPath!}">${post.summary!}</a></h4>
                                 </div>
                             </div>
