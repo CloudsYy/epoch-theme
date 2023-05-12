@@ -112,12 +112,15 @@
                     <h2>公司简介</h2>
                     <p>${settings.company_profile!}</p>
                 </div>
-
+                <@postTag method="listByCategorySlug" categorySlug="companyprofile">
+                <#list posts as post>
                 <div class="row content" style="justify-content: center">
                     <div style="text-align: center" class="col-lg-6 pt-4 pt-lg-0">
-                        <a href="https://www.e-epoch.com/cover-92uh57s7/introduction" class="read-more">了解更多</a>
+                        <a href="${post.fullPath!}" class="read-more">了解更多</a>
                     </div>
                 </div>
+                </#list>
+                </@postTag>
             </div>
         </section>
 
