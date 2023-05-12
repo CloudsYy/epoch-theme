@@ -79,6 +79,74 @@ home_header:
       label: 易元公告
       type: text
       placeholder: '填写易元公告地址'
+epoch_advance:
+  label: '核心优势'
+  items:
+    epoch_advance_content:
+      name: 'epoch_advance_content'
+      label: '核心优势'
+      type: text
+      placeholder: '请简要描述核心优势'
+    epoch_advance_title1:
+      name: 'epoch_advance_title1'
+      label: '核心优势1'
+      type: text
+      placeholder: '请填写核心优势1标题'
+    epoch_advance_content1:
+      name: 'epoch_advance_content1'
+      label: '核心优势1内容'
+      type: text
+      placeholder: '请填写核心优势1内容'
+    epoch_advance_title2:
+      name: 'epoch_advance_title2'
+      label: '核心优势2'
+      type: text
+      placeholder: '请填写核心优势2标题'
+    epoch_advance_content2:
+      name: 'epoch_advance_content2'
+      label: '核心优势2内容'
+      type: text
+      placeholder: '请填写核心优势2内容'
+    epoch_advance_title3:
+      name: 'epoch_advance_title3'
+      label: '核心优势3'
+      type: text
+      placeholder: '请填写核心优势3标题'
+    epoch_advance_content3:
+      name: 'epoch_advance_content3'
+      label: '核心优势3内容'
+      type: text
+      placeholder: '请填写核心优势3内容'
+    epoch_advance_title4:
+      name: 'epoch_advance_title4'
+      label: '核心优势4'
+      type: text
+      placeholder: '请填写核心优势4标题'
+    epoch_advance_content4:
+      name: 'epoch_advance_content4'
+      label: '核心优势4内容'
+      type: text
+      placeholder: '请填写核心优势4内容'
+    epoch_advance_title5:
+      name: 'epoch_advance_title5'
+      label: '核心优势5'
+      type: text
+      placeholder: '请填写核心优势5标题'
+    epoch_advance_content5:
+      name: 'epoch_advance_content5'
+      label: '核心优势5内容'
+      type: text
+      placeholder: '请填写核心优势5内容'
+    epoch_advance_title6:
+      name: 'epoch_advance_title6'
+      label: '核心优势6'
+      type: text
+      placeholder: '请填写核心优势6标题'
+    epoch_advance_content6:
+      name: 'epoch_advance_content6'
+      label: '核心优势6内容'
+      type: text
+      placeholder: '请填写核心优势6内容'
 
 
 

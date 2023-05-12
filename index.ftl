@@ -128,56 +128,56 @@
         <section id="services" class="services">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>{dreamer-cms:variable name='epoch_advance'/}</h2>
-                    <p>{dreamer-cms:variable name='epoch_advance_introduction'/}</p>
+                    <h2>核心优势</h2>
+                    <p>${settings.epoch_advance_content!}</p>
                 </div>
 
                 <div class="row">
                     <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon-box">
                             <i class="bi bi-card-checklist"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title1'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content1'/}</p>
+                            <h4>${settings.epoch_advance_title1!}</a></h4>
+                            <p>${settings.epoch_advance_content1!}</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                          data-aos-delay="200">
                         <div class="icon-box">
                             <i class="bi bi-bar-chart"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title2'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content2'/}</p>
+                            <h4>${settings.epoch_advance_title2!}</a></h4>
+                            <p>${settings.epoch_advance_content2!}</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                          data-aos-delay="300">
                         <div class="icon-box">
                             <i class="bi bi-binoculars"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title3'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content2'/}</p>
+                            <h4>${settings.epoch_advance_title3!}</a></h4>
+                            <p>${settings.epoch_advance_content3!}</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                          data-aos-delay="400">
                         <div class="icon-box">
                             <i class="bi bi-brightness-high"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title4'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content4'/}</p>
+                            <h4>${settings.epoch_advance_title4!}</a></h4>
+                            <p>${settings.epoch_advance_content4!}</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                          data-aos-delay="500">
                         <div class="icon-box">
                             <i class="bi bi-cloud"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title5'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content5'/}</p>
+                            <h4>${settings.epoch_advance_title5!}</a></h4>
+                            <p>${settings.epoch_advance_content5!}</p>
                         </div>
                     </div>
                     <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"
                          data-aos-delay="600">
                         <div class="icon-box">
                             <i class="bi"><img src="${theme_base!}/assets/img/database.png"></i>
-                            <h4>{dreamer-cms:variable name='epoch_advance_title6'/}</a></h4>
-                            <p>{dreamer-cms:variable name='epoch_advance_content6'/}</p>
+                            <h4>${settings.epoch_advance_title6!}</a></h4>
+                            <p>${settings.epoch_advance_content6!}</p>
                         </div>
                     </div>
                 </div>
