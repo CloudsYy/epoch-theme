@@ -1,18 +1,16 @@
 general:
-  label: 基本信息
+  label: 基本设置
   items:
     home_title:
       name: home_title
       label: 标签名
       type: text
       placeholder: '用于浏览器标签显示'
-      value: "易元 - 专注智能制造整体解决方案"
-    base_color:
-      name: base_color
-      label: 网站主题色
-      type: color
-      default: '#2474b5'
-      placeholder: '网站主题色'
+    home_ico:
+      name: home_ico
+      label: ico
+      type: attachment
+      placeholder: "用于浏览器ico显示"
 company_info:
   label: 公司信息
   items:
@@ -51,34 +49,6 @@ company_info:
       label: '公众号二维码'
       type: attachment
       placeholder: '公众号二维码，不填不显示'
-home_header:
-  label: 导航栏信息
-  items:
-    product_services:
-      name: product_services
-      label: 产品服务
-      type: text
-      placeholder: '填写产品服务地址'
-    resolution:
-      name: resolution
-      label: 解决方案
-      type: text
-      placeholder: '填写解决方案地址'
-    example:
-      name: example
-      label: 行业案例
-      type: text
-      placeholder: '填写行业案例地址'
-    about_us:
-      name: about_us
-      label: 关于我们
-      type: text
-      placeholder: '填写关于我们地址'
-    epoch_bulletin:
-      name: epoch_bulletin
-      label: 易元公告
-      type: text
-      placeholder: '填写易元公告地址'
 epoch_advance:
   label: '核心优势'
   items:
@@ -147,7 +117,19 @@ epoch_advance:
       label: '核心优势6内容'
       type: text
       placeholder: '请填写核心优势6内容'
-
+product_introduction:
+  label: '产品介绍'
+  items:
+    product1:
+      name: 'product1'
+      label: '产品1'
+      type: text
+      placeholder: '请填写产品1名称'
+    product2:
+      name: 'product2'
+      label: '产品2'
+      type: text
+      placeholder: '请填写产品2名称'
 
 
 

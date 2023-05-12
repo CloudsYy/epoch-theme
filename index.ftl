@@ -10,7 +10,7 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="${theme_base!}/assets/img/favicon.ico" rel="icon">
+    <link href="${settings.home_ico}" rel="icon">
     <link href="${theme_base!}/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
@@ -189,7 +189,7 @@
         <section id="portfolio" class="portfoio">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
-                    <h2>{dreamer-cms:variable name='epoch_product'/}</h2>
+                    <h2>产品介绍</h2>
                 </div>
 
                 <div class="row">
@@ -203,6 +203,11 @@
                     </div>
                 </div>
 
+                <div>
+                    <#list settings.product_introduction as product>
+                        ${product.name}
+                    </#list>
+                </div>
                 <div class="row portfolio-container">
                     <!--    新材料      -->
                     {dreamer-cms:list typeid="50Q0944J" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
