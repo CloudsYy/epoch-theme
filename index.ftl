@@ -44,7 +44,7 @@
             <div class="carousel-item active">
                 <div class="carousel-container">
                     <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url('${post.thumbnail!}')"></div>
+                         style="background-image:url(`${post.thumbnail!}`)"></div>
                     <div class="carousel-item-info">
                         <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
                         <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
@@ -60,7 +60,7 @@
             <div class="carousel-item">
                 <div class="carousel-container">
                     <div class="carousel-container-bg animate__animated animate__pulse"
-                         style="background-image:url('${post.thumbnail!}')"></div>
+                         style="background-image:url(`${post.thumbnail!}`)"></div>
                     <div class="carousel-item-info">
                         <h2 class="animate__animated animate__fadeInDown">${post.title!}</h2>
                         <div class="sub-title animate__animated animate__bounceInRight">${post.summary!}</div>
