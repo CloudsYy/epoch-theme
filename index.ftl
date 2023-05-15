@@ -250,13 +250,16 @@
             <div class="container" data-aos="zoom-in">
                 <div class="clients-slider swiper-container">
                     <div class="swiper-wrapper align-items-center">
-                        {dreamer-cms:list typeid="S1P5NUE1" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
-                        addfields="link"}
-                        <div class="swiper-slide"><img src="[field:litpic/]" class="img-fluid" alt="[field:title/]">
-                        </div>
-                        {/dreamer-cms:list}
+                        <@photoTag method="listTeams">
+                            <#list teams as item>
+                                <#list item.photos as photo>
+                                    <div class="swiper-slide"><img src="[field:litpic/]" class="img-fluid" alt="[field:title/]"></div>
+                                    <div class="swiper-pagination"></div>
+                                </#list>
+                            </#list>
+                        </@photoTag>
                     </div>
-                    <div class="swiper-pagination"></div>
+
                 </div>
             </div>
         </section>
@@ -274,7 +277,8 @@
                     <@postTag method="listByCategorySlug" categorySlug="recruit">
                         <#list posts as post>
                             <div>
-                                <h2 style="margin-bottom: 20px;margin-top: 20px"><a href="${post.fullPath!}">${post.title!}</a>
+                                <h2 style="margin-bottom: 20px;margin-top: 20px"><a
+                                            href="${post.fullPath!}">${post.title!}</a>
                                 </h2>
                                 <p>${post.summary!}</p>
                             </div>
