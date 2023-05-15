@@ -120,41 +120,56 @@ epoch_advance:
 product_introduction:
   label: '产品介绍'
   items:
+    product1_type:
+      name: 'product1_type'
+      label: '产品类型1'
+      type: text
+      value: '新材料'
+    product2_type:
+      name: 'product2_type'
+      label: '产品类型2'
+      type: text
+      value: '通信设备'
+    product3_type:
+      name: 'product3_type'
+      label: '产品类型3'
+      type: text
+      value: '新能源'
     product1:
       name: 'product1'
-      label: '新材料'
+      label: '产品类型1路径1'
       type: attachment
     product2:
       name: 'product2'
-      label: '新材料'
+      label: '产品类型1路径2'
       type: attachment
     product3:
       name: 'product3'
-      label: '新材料'
+      label: '产品类型1路径3'
       type: attachment
     product4:
       name: 'product4'
-      label: '通信设备'
+      label: '产品类型2路径1'
       type: attachment
     product5:
       name: 'product5'
-      label: '通信设备'
+      label: '产品类型2路径2'
       type: attachment
     product6:
       name: 'product6'
-      label: '通信设备'
+      label: '产品类型2路径3'
       type: attachment
     product7:
       name: 'product7'
-      label: '新能源'
+      label: '产品类型3路径1'
       type: attachment
     product8:
       name: 'product8'
-      label: '新能源'
+      label: '产品类型3路径2'
       type: attachment
     product9:
       name: 'product9'
-      label: '新能源'
+      label: '产品类型3路径3'
       type: attachment
 
 
