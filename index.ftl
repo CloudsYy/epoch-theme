@@ -254,8 +254,8 @@
                             <#list teams as item>
                                 <#list item.photos as photo>
                                     <div class="swiper-slide"><img src="${photo.url!}" class="img-fluid" alt="${photo.name!}"></div>
-                                    <div class="swiper-pagination"></div>
                                 </#list>
+                                <div class="swiper-pagination"></div>
                             </#list>
                         </@photoTag>
                     </div>
