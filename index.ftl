@@ -271,7 +271,7 @@
                 </div>
 
                 <div class="row">
-                    <@postTag method="listByCategorySlug" categorySlug="annocement-other">
+                    <@postTag method="listByCategorySlug" categorySlug="recruit">
                         <#list posts as post>
                             <div>
                                 <h2 style="margin-bottom: 20px;margin-top: 20px"><a href="${post.fullPath!}">${post.title!}</a>
