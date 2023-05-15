@@ -253,7 +253,7 @@
                         <@photoTag method="listTeams">
                             <#list teams as item>
                                 <#list item.photos as photo>
-                                    <div class="swiper-slide"><img src="[field:litpic/]" class="img-fluid" alt="[field:title/]"></div>
+                                    <div class="swiper-slide"><img src="${photo.url!}" class="img-fluid" alt="${photo.name!}"></div>
                                     <div class="swiper-pagination"></div>
                                 </#list>
                             </#list>
