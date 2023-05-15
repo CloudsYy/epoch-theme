@@ -205,29 +205,39 @@
 
                 <div class="row portfolio-container">
                     <!--    新材料      -->
-                    {dreamer-cms:list typeid="50Q0944J" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
-                    addfields="link"}
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <img src="[field:litpic/]" alt="[field:title/]" class="img-fluid">
+                        <img src="${settings.product1!}" alt="${settings.product1.label!}" class="img-fluid">
                     </div>
-                    {/dreamer-cms:list}
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <img src="${settings.product2!}" alt="${settings.product2.label!}" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                        <img src="${settings.product3!}" alt="${settings.product3.label!}" class="img-fluid">
+                    </div>
 
                     <!--    新能源      -->
-                    {dreamer-cms:list typeid="N96K09J0" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
-                    addfields="link"}
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <img src="[field:litpic/]" alt="[field:title/]" class="img-fluid">
+                        <img src="${settings.product4!}" alt="${settings.product4.label!}" class="img-fluid">
                     </div>
-                    {/dreamer-cms:list}
 
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="${settings.product5!}" alt="${settings.product5.label!}" class="img-fluid">
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+                        <img src="${settings.product6!}" alt="${settings.product6.label!}" class="img-fluid">
+                    </div>
 
                     <!--    通信设备      -->
-                    {dreamer-cms:list typeid="L8N6X165" pagenum="0" pagesize="8" flag="p" formkey="82XFVKIQ"
-                    addfields="link"}
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <img src="[field:litpic/]" alt="[field:title/]" class="img-fluid">
+                        <img src="${settings.product7!}" alt="${settings.product7.label!}" class="img-fluid">
                     </div>
-                    {/dreamer-cms:list}
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <img src="${settings.product8!}" alt="${settings.product8.label!}" class="img-fluid">
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+                        <img src="${settings.product9!}" alt="${settings.product9.label!}" class="img-fluid">
+                    </div>
 
                 </div>
 

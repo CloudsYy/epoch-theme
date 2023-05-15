@@ -122,39 +122,39 @@ product_introduction:
   items:
     product1:
       name: 'product1'
-      label: '产品1'
+      label: '新材料'
       type: attachment
     product2:
       name: 'product2'
-      label: '产品2'
+      label: '新材料'
       type: attachment
     product3:
       name: 'product3'
-      label: '产品3'
+      label: '新材料'
       type: attachment
     product4:
       name: 'product4'
-      label: '产品4'
+      label: '通信设备'
       type: attachment
     product5:
       name: 'product5'
-      label: '产品5'
+      label: '通信设备'
       type: attachment
     product6:
       name: 'product6'
-      label: '产品6'
+      label: '通信设备'
       type: attachment
     product7:
       name: 'product7'
-      label: '产品7'
+      label: '新能源'
       type: attachment
     product8:
       name: 'product8'
-      label: '产品8'
+      label: '新能源'
       type: attachment
     product9:
       name: 'product9'
-      label: '产品9'
+      label: '新能源'
       type: attachment
 
 
