@@ -120,17 +120,31 @@ epoch_advance:
 product_introduction:
   label: '产品介绍'
   items:
-    product1:
-      name: 'product1'
-      label: '产品1'
+    new_material:
+      name: 'new_material'
+      label: '新材料'
       type: text
-      placeholder: '请填写产品1名称'
-    product2:
-      name: 'product2'
-      label: '产品2'
+      items:
+        product1:
+          name: 'product1'
+          label: '产品1'
+          type: attachment
+        product2:
+          name: 'product2'
+          label: '产品2'
+          type: attachment
+        product3:
+          name: 'product3'
+          label: '产品3'
+          type: attachment
+    device:
+      name: 'device'
+      label: '通信设备'
       type: text
-      placeholder: '请填写产品2名称'
-
+    new_power:
+        name: 'new_power'
+        label: '新能源'
+        type: text
 
 
 
