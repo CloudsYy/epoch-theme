@@ -196,9 +196,9 @@
                     <div class="col-lg-12 d-flex justify-content-center">
                         <ul id="portfolio-flters">
                             <li data-filter="*" class="filter-active">所有</li>
-                            <li data-filter=".filter-app">{dreamer-cms:variable name='epoch_app'/}</li>
-                            <li data-filter=".filter-card">{dreamer-cms:variable name='epoch_card'/}</li>
-                            <li data-filter=".filter-web">{dreamer-cms:variable name='epoch_web'/}</li>
+                            <li data-filter=".filter-app">${settings.product1_type!}</li>
+                            <li data-filter=".filter-card">${settings.product2_type!}</li>
+                            <li data-filter=".filter-web">${settings.product3_type!}</li>
                         </ul>
                     </div>
                 </div>
