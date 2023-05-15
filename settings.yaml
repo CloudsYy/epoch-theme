@@ -125,16 +125,6 @@ product_introduction:
       label: '产品类型1'
       type: text
       value: '新材料'
-    product2_type:
-      name: 'product2_type'
-      label: '产品类型2'
-      type: text
-      value: '通信设备'
-    product3_type:
-      name: 'product3_type'
-      label: '产品类型3'
-      type: text
-      value: '新能源'
     product1:
       name: 'product1'
       label: '产品类型1路径1'
@@ -147,6 +137,11 @@ product_introduction:
       name: 'product3'
       label: '产品类型1路径3'
       type: attachment
+    product2_type:
+      name: 'product2_type'
+      label: '产品类型2'
+      type: text
+      value: '通信设备'
     product4:
       name: 'product4'
       label: '产品类型2路径1'
@@ -159,6 +154,11 @@ product_introduction:
       name: 'product6'
       label: '产品类型2路径3'
       type: attachment
+    product3_type:
+      name: 'product3_type'
+      label: '产品类型3'
+      type: text
+      value: '新能源'
     product7:
       name: 'product7'
       label: '产品类型3路径1'

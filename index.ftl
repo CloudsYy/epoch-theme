@@ -113,13 +113,13 @@
                     <p>${settings.company_profile!}</p>
                 </div>
                 <@postTag method="listByCategorySlug" categorySlug="companyprofile">
-                <#list posts as post>
-                <div class="row content" style="justify-content: center">
-                    <div style="text-align: center" class="col-lg-6 pt-4 pt-lg-0">
-                        <a href="${post.fullPath!}" class="read-more">了解更多</a>
-                    </div>
-                </div>
-                </#list>
+                    <#list posts as post>
+                        <div class="row content" style="justify-content: center">
+                            <div style="text-align: center" class="col-lg-6 pt-4 pt-lg-0">
+                                <a href="${post.fullPath!}" class="read-more">了解更多</a>
+                            </div>
+                        </div>
+                    </#list>
                 </@postTag>
             </div>
         </section>
@@ -244,10 +244,9 @@
             </div>
         </section><!-- End Portfoio Section -->
 
-
         <!--    合作伙伴      -->
         <section id="clients" class="clients">
-            <h2 class="p3">{dreamer-cms:variable name='epoch_partner'/}</h2>
+            <h2 class="p3">合作伙伴</h2>
             <div class="container" data-aos="zoom-in">
                 <div class="clients-slider swiper-container">
                     <div class="swiper-wrapper align-items-center">
@@ -267,21 +266,21 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>{dreamer-cms:variable name='epoch_team'/}</h2>
-                    <p>{dreamer-cms:variable name='epoch_team_content'/}</p>
+                    <h2>人力招聘</h2>
+                    <p>欢迎加入我们的团队！</p>
                 </div>
 
                 <div class="row">
-                    {dreamer-cms:list typeid="MR98DA58" pagenum="1" pagesize="4" flag="p" formkey="V1WL66A0"
-                    addfields="content"}
-                    <div>
-                        <h2 style="margin-bottom: 20px;margin-top: 20px"><a href="[field:arcurl /]">[field:title /]</a>
-                        </h2>
-                        <p>[field:remark /]</p>
-                    </div>
-                    {/dreamer-cms:list}
+                    <@postTag method="listByCategorySlug" categorySlug="annocement-other">
+                        <#list posts as post>
+                            <div>
+                                <h2 style="margin-bottom: 20px;margin-top: 20px"><a href="${post.fullPath!}">${post.title!}</a>
+                                </h2>
+                                <p>${post.summary!}</p>
+                            </div>
+                        </#list>
+                    </@postTag>
                 </div>
-
             </div>
         </section><!-- End Team Section -->
 
