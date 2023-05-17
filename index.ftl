@@ -249,17 +249,16 @@
             <h2 class="p3">合作伙伴</h2>
             <div class="container" data-aos="zoom-in">
                 <div class="clients-slider swiper-container">
-                    <div class="swiper-wrapper align-items-center">
-                        <@photoTag method="listTeams">
-                            <#list teams as item>
-                                <#list item.photos as photo>
+                    <@photoTag method="listTeams">
+                        <#list teams as item>
+                            <#list item.photos as photo>
+                                <div class="swiper-wrapper align-items-center">
                                     <div class="swiper-slide"><img src="${photo.url!}" class="img-fluid" alt="${photo.name!}"></div>
-                                </#list>
-                                <div class="swiper-pagination"></div>
+                                </div>
                             </#list>
-                        </@photoTag>
-                    </div>
-
+                            <div class="swiper-pagination"></div>
+                        </#list>
+                    </@photoTag>
                 </div>
             </div>
         </section>
