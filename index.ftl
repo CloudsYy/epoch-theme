@@ -110,7 +110,7 @@
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2>公司简介</h2>
-                    <p>${settings.company_profile!}</p>
+                    <p>易元数字技术有限公司，成立于2021年8月5日...，它将在未来的智能制造的行业走的更远....，让我们一起来见证他们的成长吧。</p>
                 </div>
                 <@postTag method="listByCategorySlug" categorySlug="companyprofile">
                     <#list posts as post>
