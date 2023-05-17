@@ -249,16 +249,17 @@
             <h2 class="p3">合作伙伴</h2>
             <div class="container" data-aos="zoom-in">
                 <div class="clients-slider swiper-container">
-                    <@photoTag method="listTeams">
-                        <#list teams as item>
-                            <#list item.photos as photo>
-                                <div class="swiper-wrapper align-items-center">
-                                    <div class="swiper-slide"><img src="${photo.url!}" class="img-fluid" alt="${photo.name!}"></div>
-                                </div>
-                            </#list>
-                            <div class="swiper-pagination"></div>
-                        </#list>
-                    </@photoTag>
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide"><img src="${settings.partner1!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner2!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner3!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner4!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner5!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner6!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner7!}" class="img-fluid"></div>
+                        <div class="swiper-slide"><img src="${settings.partner8!}" class="img-fluid"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>

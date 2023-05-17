@@ -171,6 +171,39 @@ product_introduction:
       name: 'product9'
       label: '产品类型3路径3'
       type: attachment
-
-
+Partner:
+  label: '合作伙伴'
+  items:
+    partner1:
+      name: 'partner1'
+      label: '合作伙伴1'
+      type: attachment
+    partner2:
+      name: 'partner2'
+      label: '合作伙伴2'
+      type: attachment
+    partner3:
+      name: 'partner3'
+      label: '合作伙伴3'
+      type: attachment
+    partner4:
+      name: 'partner4'
+      label: '合作伙伴4'
+      type: attachment
+    partner5:
+      name: 'partner5'
+      label: '合作伙伴5'
+      type: attachment
+    partner6:
+      name: 'partner6'
+      label: '合作伙伴6'
+      type: attachment
+    partner7:
+      name: 'partner7'
+      label: '合作伙伴7'
+      type: attachment
+    partner8:
+      name: 'partner8'
+      label: '合作伙伴8'
+      type: attachment
 
